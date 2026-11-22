@@ -21,7 +21,7 @@
 <body>
   <header>
     <figure>
-      <img width="280" src="../img/common/logotipo-conquer.svg" alt="Logotipo de Conquer Academy">
+      <img width="280" src="../img/common/logotipo-conquer.svg" alt="Logotipo de Conquer Blocks">
     </figure>
     <nav>
       <ul>
@@ -37,7 +37,32 @@
   </header>
 
   <main>
-    <h1>Tu primer repositorio en GitHub</h1>
+    <article>
+      <h1>Tu primer repositorio en GitHub</h1>
+      <p>Publicado el 18 de noviembre de 2026 por Laura Ortega.</p>
+      <figure>
+        <img width="320" src="../img/blog/primer-repositorio-github.jpg" alt="Historial de Git con ramas de colores y los mensajes de los commits">
+      </figure>
+      <p>Git es un programa que guarda el historial de cambios de tu proyecto. GitHub es una web donde puedes subir ese proyecto para tener una copia en internet y enseñárselo a otras personas. Si nunca has subido nada, en este artículo lo hacemos desde cero.</p>
+
+      <h2>Antes de empezar</h2>
+      <p>Necesitas tener <a target="_blank" href="https://git-scm.com/">Git</a> instalado. Si es la primera vez que lo usas en ese ordenador, dile también quién eres: escribe en la terminal <strong>git config --global user.name "Tu nombre"</strong> y, después, <strong>git config --global user.email "tu email"</strong>. Pon el mismo email con el que te registres en GitHub, así tus cambios saldrán asociados a tu cuenta.</p>
+
+      <h2>Paso a paso</h2>
+      <ol>
+        <li>Crea una cuenta gratuita en <a target="_blank" href="https://github.com/">GitHub</a>.</li>
+        <li>En GitHub, pulsa en el + de arriba a la derecha y elige New repository. Ponle un nombre y <strong>déjalo vacío</strong>, sin README, .gitignore ni licencia. Si GitHub crea algún archivo, el primer push dará error.</li>
+        <li>Abre la terminal en la carpeta de tu proyecto y escribe <strong>git init</strong>. Con esto, la carpeta pasa a ser un repositorio de Git.</li>
+        <li>Escribe <strong>git add .</strong> para preparar todos los archivos. El punto quiere decir «todo lo que hay en esta carpeta».</li>
+        <li>Guarda la primera versión con <strong>git commit -m "Primer commit"</strong>. El texto entre comillas es el mensaje que explica qué has hecho.</li>
+        <li>Escribe <strong>git branch -M main</strong> para que tu rama principal se llame main, como en GitHub.</li>
+        <li>Conecta la carpeta con el repositorio de GitHub: <strong>git remote add origin https://github.com/tu-usuario/tu-repositorio.git</strong>. La dirección exacta la copias de la página del repositorio.</li>
+        <li>Sube el proyecto con <strong>git push -u origin main</strong>. La primera vez, Git te pedirá que inicies sesión en GitHub.</li>
+      </ol>
+      <p>Recarga la página del repositorio y verás tus archivos. A partir de ahora, cuando cambies algo, repite los pasos 4 y 5 con otro mensaje y escribe solo <strong>git push</strong>: gracias al <strong>-u</strong> de la primera vez, Git ya sabe adónde tiene que subir los cambios.</p>
+    </article>
+
+    <p>Si quieres ver todas las noticias, haz clic <a href="../blog.html">aquí</a>.</p>
   </main>
 
   <footer>
