@@ -21,7 +21,7 @@
 <body>
   <header>
     <figure>
-      <img width="280" src="img/common/logotipo-conquer.svg" alt="Logotipo de Conquer Academy">
+      <img width="280" src="img/common/logotipo-conquer.svg" alt="Logotipo de Conquer Blocks">
     </figure>
     <nav>
       <ul>
@@ -38,6 +38,59 @@
 
   <main>
     <h1>Contacto</h1>
+    <p>¿Tienes dudas sobre algún curso o no sabes por cuál empezar? Aquí tienes varias formas de hablar con nosotros.</p>
+
+    <section>
+      <h2>Datos de contacto</h2>
+      <p>Las clases son online, pero también tenemos una oficina en Madrid. Puedes venir a vernos en horario de atención.</p>
+      <ul>
+        <li><strong>Dirección:</strong> Calle de Fuencarral, 45, 28004 Madrid</li>
+        <li><strong>Teléfono:</strong> 910 000 000</li>
+        <li><strong>Email:</strong> <a href="mailto:info@conqueracademy.example">info@conqueracademy.example</a></li>
+        <li><strong>Horario de atención:</strong> de lunes a viernes, de 9:00 a 18:00</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Dónde estamos</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.3449384132286!2d-3.7008091!3d40.4233603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228887909063f%3A0x7d4f1bc3eaf2967!2sCalle%20de%20Fuencarral%2C%2045%2C%20Centro%2C%2028004%20Madrid!5e0!3m2!1ses!2ses!4v1795351161747!5m2!1ses!2ses" width="320" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+
+    <section>
+      <h2>Envíanos un mensaje</h2>
+      <p>Rellena el formulario y te contestaremos por email lo antes posible.</p>
+      <form action="#" method="post">
+        <p>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" required>
+        </p>
+
+        <p>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </p>
+
+        <p>
+          <label for="asunto">Asunto</label>
+          <select name="asunto" id="asunto" required>
+            <option value="">Elige una opción</option>
+            <option value="cursos">Información sobre los cursos</option>
+            <option value="inscripcion">Inscripción</option>
+            <option value="otra">Otra consulta</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="mensaje">Mensaje</label><br>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
+        </p>
+
+        <p>
+          <button>Enviar</button>
+          <input type="reset" value="Borrar formulario">
+        </p>
+      </form>
+    </section>
   </main>
 
   <footer>
